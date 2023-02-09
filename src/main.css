@@ -1,6 +1,6 @@
 * {
-    font-family: "Helvetica Neue", "Arial", sans-serif;
-    background-color: blue;
+    background-color: #000;
+    font-family: "Helvetica Neue";
 }
 .quote-box {
     position: absolute;
@@ -8,13 +8,14 @@
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    background-color: rgb(251, 1, 1);
+    background-color:aliceblue;
     width: 50%;
     padding: 2%;
     text-align: center;
 }
 
 .text {
+    background-color: aliceblue;
     position: relative;
     max-width: 100%;
     font-size: xx-large;
@@ -22,6 +23,7 @@
 }
 
 .author {
+    background-color: aliceblue;
     font-style: italic;
     font-size: x-large;
     text-align: right;
@@ -30,16 +32,51 @@
     border-bottom: solid;
 }
 
+.actions {
+    background-color: aliceblue;
+    border-style: solid;
+    border: aliceblue;
+    display: flex;
+    align-items: center;
+}
+
+.image {
+    max-height: 6%;
+    max-width: 6%;
+    background-color: aliceblue;
+    border: aliceblue;
+    border-style: solid;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    margin-right: auto;
+}
+
+/*.tweet-quote {
+    background-color: aliceblue;
+    color: aliceblue;
+    border-style: solid;
+    border-color: rgba(43, 255, 0, 0.507);
+
+}
+
 .new-quote {
+    background-color: aliceblue;
     max-width: 100%;
-    margin-top: 3%;
+
     display: flex;
     justify-content: flex-end;
 }
-
+*/
 .random-button {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    justify-content: flex-end;
     border-style: hidden;
     border-radius: 2px;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: black;
     font-size: medium;
     font-weight: 300;
     max-height: 100%;

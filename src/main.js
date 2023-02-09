@@ -1,14 +1,22 @@
 import React, { useState } from "react";
+import twitterPng from "./twitter.png";
 import './main.css';
 
 export function QuotePage() {
-    let randomColor = Math.floor(Math.random() * 16777215).toString(16);
+
+    let bgColor = Math.floor(Math.random() * 16777215).toString(16);
 
     const quotesList = [
-        {quote : '"Many of life’s failures are people who did not realize how close they were to success when they gave up."', author : 'name1'},
-        {quote : 'Bones2', author : 'name2'},
-        {quote : 'Bones3', author : 'name3'},
-        {quote : 'Bones4', author : 'name4'},
+        {quote : '"Many of life’s failures are people who did not realize how close they were to success when they gave up."', 
+                author : 'Thomas A. Edison'},
+        {quote : '"To live is the rarest thing in the world. Most people exist, that is all."', 
+                author : 'Oscar Wilde'},
+        {quote : '"To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment."', 
+                author : 'Ralph Waldo Emerson'},
+        {quote : '"Be kind, for everyone you meet is fighting a hard battle."', 
+                author : 'Plato'},
+        {quote : '"Appreciation is a wonderful thing. It makes what is excellent in others belong to us as well."', 
+                author : 'Voltaire'},
     ];
 
     function getRandomIndex() {
@@ -34,7 +42,8 @@ export function QuotePage() {
                 <div className="author">
                     - {selectedAuthor}
                 </div>
-                <div className="new-quote">
+                <div className="actions">
+                    <img className="image" src={twitterPng}></img>
                     <button className="random-button" onClick={HandleRandomise}>Randomise</button>
                 </div>
             </div>
